@@ -3,9 +3,18 @@
     padding: 0;
 }
 
+#bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
 #credit-card {
     display: flex;
-    margin-top: 10px;
+    gap: 10px;
+
 }
 
 #front-card,
@@ -14,16 +23,11 @@
     height: 200px;
 }
 
-#bg {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 #front-card {
     background-color: red;
-    margin-right: 10px;
+
 }
 
 #back-card {
@@ -34,5 +38,4 @@
     width: 400px;
     height: 600px;
     background-color: brown;
-    margin-top: 10px;
 }
