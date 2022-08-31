@@ -5,6 +5,7 @@
 
 #credit-card {
     display: flex;
+    margin-top: 10px;
 }
 
 #front-card,
@@ -22,6 +23,7 @@
 
 #front-card {
     background-color: red;
+    margin-right: 10px;
 }
 
 #back-card {
@@ -32,4 +34,5 @@
     width: 400px;
     height: 600px;
     background-color: brown;
+    margin-top: 10px;
 }
