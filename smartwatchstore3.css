@@ -123,9 +123,54 @@ img {
 /* ----------------------- back card */
 
 #back-card {
-    padding: 15px;
+    padding: 15px 0;
+    width: 380px;
     background-image: linear-gradient(to right bottom, #040382, #50bdfc, #040382);
 }
+
+#black {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#signature-card {
+    display: flex;
+    align-items: center;
+}
+
+#signature {
+    display: inline-block;
+    width: 80%;
+
+}
+
+#signature hr {
+    border: 0.1px solid #a7a7a7;
+    border-bottom: 1px solid #a7a7a7;
+    height: 2px;
+    background-color: #cdcdcd;
+}
+
+#ccv {
+    display: inline-block;
+    background-color: white;
+    padding: 5px;
+}
+
+#description {
+    color: white;
+    font-size: 0.6em;
+    margin: 15px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+
+/* ----------------------- form */
 
 #form {
     width: 400px;
