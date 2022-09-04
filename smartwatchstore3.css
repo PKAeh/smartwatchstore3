@@ -41,7 +41,7 @@
     font-size: 1.5em;
     font-style: italic;
     font-weight: bold;
-    text-shadow: 1px 0 black;
+    text-shadow: 1px 0 2px black;
     margin-bottom: 5px;
 }
 
@@ -65,7 +65,7 @@ img {
 #card-number {
     text-align: center;
     letter-spacing: 5px;
-    text-shadow: 1px 0 black;
+    text-shadow: 1px 0 2px black;
 }
 
 #valid {
@@ -90,7 +90,7 @@ img {
     font-size: 1.1em;
     text-transform: uppercase;
     letter-spacing: 4px;
-    text-shadow: 1px 0 black;
+    text-shadow: 1px 0 2px black;
     margin-top: 10px;
 }
 
