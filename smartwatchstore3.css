@@ -173,7 +173,61 @@ img {
 /* ----------------------- form */
 
 #form {
-    width: 400px;
+
+    width: 450px;
     height: 600px;
-    background-color: brown;
+    /* background-color: brown; */
+    margin-top: 30px;
+}
+
+label {
+    color: #e5e5e3;
+}
+
+input {
+    width: 100%;
+    font-size: 1.5em;
+    padding: 8px 0;
+    margin-bottom: 42px;
+    border: 0;
+    border-bottom: 1px solid #e5e5e3;
+}
+
+#date-ccv input {
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+#date-ccv {
+    display: flex;
+}
+
+#date-ccv>div {
+    margin-right: 5px;
+}
+
+button {
+    width: 98%;
+    padding: 20px 0;
+    border-radius: 8px;
+    border: 0;
+    background-color: #5d90e3;
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
 }
