@@ -175,8 +175,6 @@ img {
 #form {
 
     width: 450px;
-    height: 600px;
-    /* background-color: brown; */
     margin-top: 30px;
 }
 
@@ -230,4 +228,31 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
     /* Firefox */
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    #bg {
+        padding: 10px;
+    }
+
+    #credit-card {
+        display: block;
+    }
+
+    #front-card {
+        width: calc(100% - 30px);
+    }
+
+    #back-card {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #form {
+        width: 100%;
+    }
 }
