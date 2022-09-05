@@ -5,14 +5,19 @@ const validDateInput = document.getElementById('valid-form')
 const cvcInput = document.getElementById('cvc-form')
 
 
-ownerNameInput.addEventListener('input', () => {
-    const ownerName = document.getElementById('owner-name')
-    const value = ownerNameInput.value
-    ownerName.innerText = value
-})
+const setText = (id) => {
 
-bankNameInput.addEventListener('input', () => {
-    const bankName = document.getElementById('bank-name')
-    const value = bankNameInput.value
-    bankName.innerText = value
-})
+    // เพื่อนำค่า value ที่รับมาใช้ทุกครั้งที่มีการพิมพ์ใน input ของตัวนำเข้านั้นๆ
+    return (event) => {
+        const element = document.getElementById(id)
+        const value = event.target.value
+        element.innerText = value
+    }
+}
+
+
+ownerNameInput.addEventListener('input', setText('owner-name'))
+bankNameInput.addEventListener('input', setText('bank-name'))
+cardNumberInput.addEventListener('input', setText('card-number'))
+validDateInput.addEventListener('input', setText('valid-date'))
+cvcInput.addEventListener('input', setText('ccv'))
