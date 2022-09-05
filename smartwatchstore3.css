@@ -1,7 +1,15 @@
+:root {
+    --primary-background: #f1f1f1;
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+
+body {
+    background-color: var(--primary-background);
 }
 
 #bg {
@@ -179,7 +187,7 @@ img {
 }
 
 label {
-    color: #e5e5e3;
+    color: #d6d8db;
 }
 
 input {
@@ -188,7 +196,8 @@ input {
     padding: 8px 0;
     margin-bottom: 42px;
     border: 0;
-    border-bottom: 1px solid #e5e5e3;
+    border-bottom: 1px solid #d6d8db;
+    background-color: var(--primary-background);
 }
 
 #date-ccv input {
