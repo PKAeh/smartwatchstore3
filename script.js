@@ -10,3 +10,9 @@ ownerNameInput.addEventListener('input', () => {
     const value = ownerNameInput.value
     ownerName.innerText = value
 })
+
+bankNameInput.addEventListener('input', () => {
+    const bankName = document.getElementById('bank-name')
+    const value = bankNameInput.value
+    bankName.innerText = value
+})
