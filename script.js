@@ -19,5 +19,17 @@ const setText = (id) => {
 ownerNameInput.addEventListener('input', setText('owner-name'))
 bankNameInput.addEventListener('input', setText('bank-name'))
 cardNumberInput.addEventListener('input', setText('card-number'))
-validDateInput.addEventListener('input', setText('valid-date'))
 cvcInput.addEventListener('input', setText('ccv'))
+
+
+validDateInput.addEventListener('input', (event) => {
+    const element = document.getElementById('valid-date')
+    const value = event.target.value
+    if (value.length >= 2) {
+        const s1 = value.slice(0, 2)
+        const s2 = value.slice(2)
+        element.innerText = `${s1}/${s2}`
+    } else {
+        element.innerText = value
+    }
+})
