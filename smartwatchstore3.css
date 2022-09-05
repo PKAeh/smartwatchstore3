@@ -163,9 +163,13 @@ img {
 }
 
 #ccv {
-    display: inline-block;
+    display: flex;
+    width: 37px;
+    height: 30px;
     background-color: white;
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #description {
