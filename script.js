@@ -25,16 +25,16 @@ cardNumberInput.addEventListener('input', (event) => {
     const element = document.getElementById('card-number')
     const value = event.target.value
     if (value.length >= 4) {
-        const s1 = value.slice(0, 4)
-        const s2 = value.slice(4, 8)
-        const s3 = value.slice(8, 12)
-        const s4 = value.slice(12, 16)
-        element.innerText = `${s1} ${s2} ${s3} ${s4}`
+        const arr = []
+        for (let i = 0; i < value.length; i += 4) {
+            const slice = value.slice(i, i + 4)
+            arr.push(slice)
+        }
+        element.innerText = arr.join(' ')
     } else {
         element.innerText = value
     }
 })
-
 
 validDateInput.addEventListener('input', (event) => {
     const element = document.getElementById('valid-date')
